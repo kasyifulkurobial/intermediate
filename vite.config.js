@@ -20,5 +20,5 @@ export default defineConfig({
       port: 5174, 
     },
   },
-  base: '/webintermediateproyekakhir/',
+  base: '/intermediate/',
 });
