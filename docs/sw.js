@@ -13,8 +13,8 @@ const APP_SHELL_FILES = [
   "/styles/styles.css",
   "/intermediate/icons/icon-192x192.png",
   "/intermediate/icons/icon-512x512.png",
-  "/intermediate/images/logo.png",
-  "/intermediate/manifest.json",
+  "/images/logo.png",
+  "/manifest.json",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
 ]
