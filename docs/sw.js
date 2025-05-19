@@ -6,15 +6,15 @@ const DATA_CACHE_NAME = "data-cache-v1"
 
 // Daftar aset yang akan di-cache untuk application shell
 const APP_SHELL_FILES = [
-  "/intermediate/",
-  "/intermediate/index.html",
-  "/intermediate/offline.html",
-  "/intermediate/scripts/index.js",
-  "/intermediate/styles/styles.css",
+  "/",
+  "/index.html",
+  "/offline.html",
+  "/scripts/index.js",
+  "/styles/styles.css",
   "/intermediate/icons/icon-192x192.png",
   "/intermediate/icons/icon-512x512.png",
-  "/intermediate/images/logo.png",
-  "/intermediate/manifest.json",
+  "/images/logo.png",
+  "/manifest.json",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
 ]
