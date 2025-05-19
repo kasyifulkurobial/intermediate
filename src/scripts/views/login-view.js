@@ -123,6 +123,13 @@ class LoginView {
     }
   }
 
+  hideLoadingOverlay() {
+    const overlay = document.getElementById("loading-overlay")
+    if (overlay) {
+      overlay.style.display = "none"
+    }
+  }
+
   applyViewTransition() {
     document.documentElement.classList.add("view-transition")
   }

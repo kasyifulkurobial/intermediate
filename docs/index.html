@@ -6,15 +6,15 @@
     <meta name="description" content="Berbagi cerita dan momen bersama komunitas Dicoding" />
     <meta name="theme-color" content="#0d6efd" />
     
-    <link rel="manifest" href="/webintermediateproyekakhir/manifest.json" />
-    <link rel="shortcut icon" href="/webintermediateproyekakhir/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" href="/webintermediateproyekakhir/icons/icon-192x192.png" />
+    <link rel="manifest" href="/intermediate/manifest.json" />
+    <link rel="shortcut icon" href="/intermediate/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="/intermediate/icons/icon-192x192.png" />
     
     <title>Dicoding Stories</title>
 
     
-    <script type="module" crossorigin src="/webintermediateproyekakhir/assets/index-4abfac39.js"></script>
-    <link rel="stylesheet" href="/webintermediateproyekakhir/assets/index-4402ed32.css">
+    <script type="module" crossorigin src="/intermediate/assets/index-3b468b37.js"></script>
+    <link rel="stylesheet" href="/intermediate/assets/index-49242e70.css">
   </head>
   <body>
     <header>
@@ -26,6 +26,7 @@
             <li><a href="#/">Home</a></li>
             <li><a href="#/add">Add Story</a></li>
             <li><a href="#/about">About</a></li>
+            <li><a href="#/notifications">Notifications</a></li>
             <li><a href="#/login" id="login-menu">Login</a></li>
             <li><a href="#/favorites" id="favorites-menu">Favorites</a></li>
           </ul>
@@ -41,6 +42,16 @@
       <div class="notification-content">
         <p id="notification-message"></p>
         <button id="notification-close" class="notification-close" aria-label="Close notification">×</button>
+      </div>
+    </div>
+    
+    <div id="install-app-container" class="install-app-container">
+      <div class="install-app-content">
+        <p>Install Dicoding Stories app for a better experience!</p>
+        <div class="install-app-actions">
+          <button id="install-app-button" class="button button-primary">Install App</button>
+          <button id="install-app-close" class="button button-secondary">Not Now</button>
+        </div>
       </div>
     </div>
   </body>

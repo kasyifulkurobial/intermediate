@@ -33,6 +33,8 @@ class LoginPresenter {
       // Redirect to home page after a short delay
       setTimeout(() => {
         window.location.hash = "#/"
+        // Hide loading overlay after redirect
+        this.view.hideLoadingOverlay()
       }, 1000)
     } else {
       // Show error
