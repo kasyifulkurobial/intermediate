@@ -7,8 +7,8 @@ const DATA_CACHE_NAME = "data-cache-v1"
 
 const APP_SHELL_FILES = [
   "/",
-  "/index.html",
-  "/offline.html",
+  "/intermediate/index.html",
+  "/intermediate/offline.html",
   "/scripts/index.js",
   "/styles/styles.css",
   "/intermediate/icons/icon-192x192.png",
@@ -27,7 +27,17 @@ self.addEventListener("install", (event) => {
   const cacheAppShell = async () => {
     const appShellCache = await caches.open(APP_SHELL_CACHE)
     console.log("Service Worker: Caching App Shell")
-    return appShellCache.addAll(APP_SHELL_FILES)
+    return appShellCache.addAll(APP_SHELL_FILES).catch(err => {
+      console.error("Failed to cache app shell files", err);
+      APP_SHELL_FILES.forEach(async file => {
+        try {
+          const response = await fetch(file)
+          if (!response.ok) throw new Error(`Status ${response.status}`)
+        } catch (error) {
+          console.error(`❌ Failed to fetch: ${file}`, error)
+        }
+      });
+    });
   }
 
   event.waitUntil(cacheAppShell())
