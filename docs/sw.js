@@ -7,8 +7,8 @@ const DATA_CACHE_NAME = "data-cache-v1"
 
 const APP_SHELL_FILES = [
   "/",
-  "/intermediate/index.html",
-  "/intermediate/offline.html",
+  "/index.html",
+  "/offline.html",
   "/scripts/index.js",
   "/styles/styles.css",
   "/intermediate/icons/icon-192x192.png",
