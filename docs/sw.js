@@ -3,21 +3,21 @@
 const CACHE_NAME = "dicoding-stories-v1"
 const APP_SHELL_CACHE = "app-shell-v1"
 const DATA_CACHE_NAME = "data-cache-v1"
+const BASE_PATH = "/intermediate";
 
-// Daftar aset yang akan di-cache untuk application shell
 const APP_SHELL_FILES = [
-  "/",
-  "/index.html",
-  "/offline.html",
-  "/scripts/index.js",
-  "/styles/styles.css",
-  "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png",
-  "/images/logo.png",
-  "/manifest.json",
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/offline.html`,
+  `${BASE_PATH}/scripts/index.js`,
+  `${BASE_PATH}/styles/styles.css`,
+  `${BASE_PATH}/icons/icon-192x192.png`,
+  `${BASE_PATH}/icons/icon-512x512.png`,
+  `${BASE_PATH}/images/logo.png`,
+  `${BASE_PATH}/manifest.json`,
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
-]
+];
 
 // Install Service Worker
 self.addEventListener("install", (event) => {
