@@ -9,25 +9,25 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/intermediate/icons/icon-192x192.png",
+      "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/intermediate/icons/icon-512x512.png",
+      "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/intermediate/screenshots/screenshot-wide.jpeg",
+      "src": "/screenshots/screenshot-wide.jpeg",
       "type": "image/jpeg",
       "sizes": "800x600",
       "form_factor": "wide"
     },
     {
-      "src": "/intermediate/screenshots/screenshot-narrow.jpeg",
+      "src": "/screenshots/screenshot-narrow.jpeg",
       "type": "image/jpeg",
       "sizes": "400x800",
       "form_factor": "narrow"
