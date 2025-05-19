@@ -6,11 +6,11 @@ const DATA_CACHE_NAME = "data-cache-v1"
 
 
 const APP_SHELL_FILES = [
-  "/intermediate/",
-  "/intermediate/index.html",
-  "/intermediate/offline.html",
-  "/intermediate/scripts/index.js",
-  "/intermediate/styles/styles.css",
+  "/",
+  "/index.html",
+  "/offline.html",
+  "/scripts/index.js",
+  "/styles/styles.css",
   "/intermediate/icons/icon-192x192.png",
   "/intermediate/icons/icon-512x512.png",
   "/intermediate/images/logo.png",
